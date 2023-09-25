@@ -1,12 +1,14 @@
 import './globals.scss';
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Poppins({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600']
+});
 
-export const metadata: Metadata = {
+export const metadata = {
   title: 'Sophia Contesini',
-  description: 'Sophia Contesini is a Software Engineer and UX Designer...'
+  description: 'Sophia Contesini is a front-end developer and ux designer...'
 };
 
 export default function RootLayout({
